@@ -29,7 +29,7 @@ If you're running pfsense (or maybe anything with NET-SNMP), see https://github.
 1. clone repo 
 1. get Coredns source
 1. in coredns/plugin direction `ln -s REPO_LOCATION snmp`
-2. add `snmp:snmp` to plugin/plugin.cfg
-3. go generate
-4. go build
-5. ./coredns
+2. add `snmp:snmp` to plugin/plugin.cfg (order matters, i think right after the `hosts` plugin is good)
+4. go generate
+5. go build
+6. ./coredns
