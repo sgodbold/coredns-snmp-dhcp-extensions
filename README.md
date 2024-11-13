@@ -11,6 +11,8 @@ Your SNMP server must send leases in a single OID in the following json format, 
 
 Only ip and fqn are used.
 
+If you're running pfsense (or maybe anything with NET-SNMP), see https://github.com/sgodbold/pfsense-snmpd-dhcp-extension for extending your snmp server to provid this data.
+
 ## Coredns Configuration
 ```
 . {
